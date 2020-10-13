@@ -11,6 +11,33 @@ const questions = [
     "Enter test instructions: "
 ];
 
+// array of license options
+
+const licenses = [
+    "Academic Free License v3.0",
+    "Apache license 2.0",
+    "Artistic license 2.0",
+    "Boost Software License 1.0",
+    "BSD 2-clause \"Simplified\" license",
+    "Creative Commons license family",
+    "Do What The F*ck You Want To Public License",
+    "Educational Community License v2.0",
+    "Eclipse Public License 1.0",
+    "European Union Public License 1.1",
+    "GNU General Public License family",
+    "ISC",
+    "LaTeX Project Public License v1.3c",
+    "Microsoft Public License",
+    "MIT",
+    "Mozilla Public License 2.0",
+    "Open Software License 3.0",
+    "PostgreSQL License",
+    "SIL Open Font License 1.1",
+    "University of Illinois/NCSA Open Source License",
+    "The Unlicense",
+    "zLib License"
+]
+
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, JSON.stringify(data), function(err){
@@ -55,6 +82,12 @@ function init() {
             message: questions[5],
             name: "testing"
         },
+        {
+            type: "list",
+            message: "Select a license: ",
+            name: "license",
+            choices: licenses
+        }
     ]).then(response => {
         console.log(response);
         writeToFile("README.md", response)
