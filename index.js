@@ -1,3 +1,4 @@
+const fs = require("fs");
 const inquirer = require("inquirer");
 
 // array of questions for user
@@ -12,6 +13,13 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, JSON.stringify(data), function(err){
+        if (err){
+            console.log("Your README could not be created. Please try again.")
+        } else {
+            console.log("Success!")
+        }
+    })
 }
 
 // function to initialize program
@@ -49,6 +57,7 @@ function init() {
         },
     ]).then(response => {
         console.log(response);
+        writeToFile("README.md", response)
     })
 
 }

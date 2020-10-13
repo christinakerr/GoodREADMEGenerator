@@ -1,1 +1,1 @@
-# GoodREADMEGenerator
+{"title":"dsaf","description":"afds","installation":"afd","usage":"dfass","contribution":"adfas","testing":"adsfas"}
