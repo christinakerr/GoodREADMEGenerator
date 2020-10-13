@@ -87,6 +87,16 @@ function init() {
             message: "Select a license: ",
             name: "license",
             choices: licenses
+        },
+        {
+            type: "input",
+            message: "GitHub username: ",
+            name: "gitHub"
+        },
+        {
+            type: "input",
+            message: "Email address: ",
+            name: "email"
         }
     ]).then(response => {
         console.log(response);
