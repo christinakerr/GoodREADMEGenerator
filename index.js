@@ -6,11 +6,9 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 // array of license options
 
 const licenses = [
-    "Apache license 2.0",
-    "BSD 2-clause \"Simplified\" license",
-    "GNU General Public License family",
-    "ISC",
     "MIT",
+    "GPLv3",
+    "Creative Commons"
 ]
 
 // array of questions for user
