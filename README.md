@@ -1,1 +1,0 @@
-{"title":"fdasf","description":"fdsafda","installation":"fdafsdasf","usage":"fdafdasf","contribution":"fdasfdasfa","testing":"fdafdafdsa","license":"Do What The F*ck You Want To Public License","gitHub":"christinakerr","email":"christinakerr394@gmail.com"}
